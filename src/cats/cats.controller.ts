@@ -25,6 +25,11 @@ export class CatsController {
     return 'This action returns all cats';
   }
 
+  @Get('ab*cd')
+  wildcardFindAll() {
+    return 'This route uses a wildcard "ab*cd". The characters ?, +, *, and () may be used in a route path';
+  }
+
   @Get(':id')
   findOne(@Param('id') id: string) {
     return this.catsService.findOne(+id);
