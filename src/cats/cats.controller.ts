@@ -17,7 +17,7 @@ export class CatsController {
 
   @Post()
   create(@Body() createCatDto: CreateCatDto) {
-    return this.catsService.create(createCatDto);
+    return 'This action adds a new cat';
   }
 
   @Get()
