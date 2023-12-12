@@ -14,7 +14,7 @@ export class CatsController {
 
   @Get()
   findAll() {
-    return this.catsService.findAll();
+    return 'This action returns all cats';
   }
 
   @Get(':id')
